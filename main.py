@@ -14,8 +14,9 @@ def catchWeb(url):
         if 'src' in item.attrs:
             src = item['src']
             name.append(src)
+    print('Total de imagens encontradas: ' + str(len(name)))
     print(name)
 
 if __name__ == '__main__':
-    url = "https://uol.com.br"
+    url = "https://globo.com"
     catchWeb(url)
